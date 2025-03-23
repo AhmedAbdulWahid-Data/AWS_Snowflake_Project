@@ -6,7 +6,12 @@ This project processes and analyzes Yelp reviews to extract valuable insights us
 
 # You can download the dataset 👉 [Here! 📂](https://business.yelp.com/data/resources/open-dataset/)
 
+---
+
 ## 🔄 Workflow
+
+<img width="1304" alt="Screenshot 2025-03-23 at 1 00 00 PM" src="https://github.com/user-attachments/assets/da64924d-5a40-470a-9ac7-19d696f04767" />
+
 
 ### 📥 Data Ingestion
 - 📂 **Yelp reviews** (5GB - 7 million records) and **business data** (100MB) in JSON format.
