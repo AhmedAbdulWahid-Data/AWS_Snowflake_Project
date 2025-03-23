@@ -37,4 +37,21 @@ This project processes and analyzes Yelp reviews to extract valuable insights us
 - ❄️ **Snowflake**: Data warehousing and analytics.
 - 🗄️ **SQL**: Data querying and analysis.
 
+---
+## 🔢 SQL Business Questions and Solutions
+
+### 📌 Problem 1: Find the number of businesses in each category
+
+```sql
+-- Find number of businesses in each category
+with cte as (
+    select business_id, trim(A.value) as category
+    from tbl_yelp_businesses
+    ,lateral split_to_table(categories, ',') A
+)
+select category, count(*) as no_of_business
+from cte
+group by 1;
+```
+
 🚀 Hope you find this project useful! Feel free to contribute or reach out with any questions. 😊
