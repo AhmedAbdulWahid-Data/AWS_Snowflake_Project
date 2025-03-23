@@ -1,4 +1,4 @@
-# 📊 Analytics Project: Yelp Reviews Sentiment and Data Analysis
+# 📊 Big Data Project: Yelp Reviews Sentiment and Analytics 
 
 ## 🚀 Project Overview
 
