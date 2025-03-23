@@ -40,6 +40,7 @@ This project processes and analyzes Yelp reviews to extract valuable insights us
 ---
 ## 🔢 SQL Business Questions and Solutions
 
+
 ### 📌 Problem 1: Find the number of businesses in each category
 
 ```sql
@@ -54,6 +55,7 @@ group by 1
 order by 2 desc;
 ```
 
+
 ### 📌 Problem 2: Find the top 10 users who have reviewed the most businesses in the “Restaurants” category
 
 ```sql
@@ -65,6 +67,7 @@ group by 1
 order by 2 desc
 limit 10;
 ```
+
 
 ### 📌 Problem 3: Find the most popular categories of businesses (based on the number of reviews).
 
@@ -81,6 +84,7 @@ group by 1
 order by 2 desc;
 ```
 
+
 ### 📌 Problem 4: Find the top 3 most recent reviews for each business.
 
 ```sql
@@ -94,6 +98,7 @@ select * from cte
 where rn <= 3;
 ```
 
+
 ### 📌 Problem 5: Find the month with the highest number of reviews.
 
 ```sql
@@ -102,6 +107,7 @@ from tbl_yelp_reviews
 group by 1
 order by 2 desc;
 ```
+
 
 ### 📌 Problem 6: Find the percentage of 5-star reviews for each business.
 
@@ -117,6 +123,7 @@ inner join tbl_yelp_businesses b
     on r.business_id = b.business_id
 group by 1,2;
 ```
+
 
 ### 📌 Problem 7: Find the top 5 most reviewed businesses in each city.
 
@@ -136,6 +143,7 @@ select *
 from cte
 qualify row_number() over (partition by city order by total_reviews desc) <= 5;
 ```
+
 
 ### 📌 Problem 8: Find the average rating of businesses that have at least 100 reviews.
 
@@ -171,6 +179,7 @@ group by 1, 2
 order by user_id;
 ```
 
+
 ### 📌 Problem 10: Find the top 10 businesses with the highest positive sentiment reviews.
 
 ```sql
@@ -183,4 +192,5 @@ order by 3 desc
 limit 10;
 ```
 
-🚀 Hope you find this project useful! Feel free to contribute or reach out with any questions. 😊
+
+# 🚀 Hope you find this project useful! Feel free to contribute or reach out with any questions. 😊
