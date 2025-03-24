@@ -6,6 +6,8 @@ This project processes and analyzes Yelp reviews to extract valuable insights us
 
 # You can download the dataset 👉 [Here! 📂](https://business.yelp.com/data/resources/open-dataset/)
 
+# You can download my Snowflake guide 👉[Here! 📂](https://github.com/user-attachments/files/19433334/Snowflake.pdf)
+
 ---
 
 ## 🔄 Workflow
